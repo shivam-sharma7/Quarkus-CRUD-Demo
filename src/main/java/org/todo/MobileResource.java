@@ -70,4 +70,18 @@ public class MobileResource {
 
     }
 
+    /*Created a Get request to get a mobile list and his properties by the id */
+
+    @GET
+    @Path("/{id}")
+    public Response getMobileById(@PathParam("id") int id){
+        Optional<Mobile>optionalMobile = mobileList.stream().filter(mobile -> mobile.getId() == id).findFirst();
+        if(optionalMobile.isPresent()){
+            return Response.ok(optionalMobile.get()).build();
+        }else{
+
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+    }
+
 }
