@@ -5,6 +5,7 @@ public class Mobile {
     int id;
     String name;
     String brand;
+    String color;
     int ram;
     int storage;
 
@@ -14,6 +15,7 @@ public class Mobile {
 
     public void setId(int id) {
         this.id = id;
+
     }
 
     public String getName() {
@@ -46,5 +48,13 @@ public class Mobile {
 
     public void setStorage(int storage) {
         this.storage = storage;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    public void setColor(){
+        this.color = color;
     }
 }
