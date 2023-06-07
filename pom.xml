@@ -16,6 +16,11 @@
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.0.0</surefire-plugin.version>
   </properties>
+  <scm>
+    <connection>:git@github.com:shivam-sharma7/Quarkus-CRUD-Demo.git</connection>
+    <developerConnection>scm:git:@github.com:shivam-sharma7/Quarkus-CRUD-Demo.git</developerConnection>
+    <url>https://github.com/shivam-sharma7/Quarkus-CRUD-Demo</url>
+  </scm>
   <dependencyManagement>
     <dependencies>
       <dependency>
